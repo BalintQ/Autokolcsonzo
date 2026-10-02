@@ -1,0 +1,17 @@
+[
+    {
+        "gyarto" : "Gyártó",
+        "modell" : "Modell",
+        "evjarat" : "Évjárat",
+        "ar" : "Ár",
+        "kep" : "/kepek/auto.jpg"
+    },
+
+    {
+        "gyarto" : "Gyártó",
+        "modell" : "Modell",
+        "evjarat" : "Évjárat",
+        "ar" : "Ár",
+        "kep" : "/kepek/auto.jpg"
+    }
+]
