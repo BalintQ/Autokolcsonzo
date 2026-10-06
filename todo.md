@@ -3,5 +3,5 @@
 ### TODO
 
 - [ ] Navigácó oldalak között
-- [ ] Bálint: Jelenlegi foglalások gnerálása
-- [ ] Bálint: Jelenlegi foglalások megjalenitése
+- [ ] Bálint: Jelenlegi foglalások generálása
+- [ ] Bálint: Jelenlegi foglalások megjelenitése

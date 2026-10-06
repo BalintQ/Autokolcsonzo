@@ -1,18 +1,50 @@
 [
     {
         "id" : 1,
-        "gyarto" : "Gyártó",
-        "modell" : "Modell",
-        "evjarat" : "Évjárat",
-        "ar" : "Ár",
-        "kep" : "/kepek/auto.jpg"
+        "gyarto" : "Audi",
+        "modell" : "A3 sportback (8Y)",
+        "evjarat" : "2020",
+        "ar" : 45000,
+        "kep" : "/kepek/audi.jpg"
     },
     {
         "id" : 2,
-        "gyarto" : "Gyártó",
-        "modell" : "Modell",
-        "evjarat" : "Évjárat",
-        "ar" : "Ár",
-        "kep" : "/kepek/auto.jpg"
+        "gyarto" : "Citroën",
+        "modell" : "C3",
+        "evjarat" : "2024",
+        "ar" : 47000,
+        "kep" : "/kepek/citroen.jpg"
+    },
+    {
+        "id" : 3,
+        "gyarto" : "Opel",
+        "modell" : "Astra L",
+        "evjarat" : "2021",
+        "ar" : 43000,
+        "kep" : "/kepek/opel.jpg"
+    },
+    {
+        "id" : 4,
+        "gyarto" : "Peugeot",
+        "modell" : "3008 (P64)",
+        "evjarat" : "2024",
+        "ar" : 55000,
+        "kep" : "/kepek/peugeot.jpg"
+    },
+    {
+        "id" : 5,
+        "gyarto" : "Renault",
+        "modell" : "Trafic Combi Equilibre L2H1 Blue DCI 150",
+        "evjarat" : "2022",
+        "ar" : 70000,
+        "kep" : "/kepek/renault.png"
+    },
+    {
+        "id" : 6,
+        "gyarto" : "Toyota",
+        "modell" : "C-HR 2.0 Hybrid GR Sport e-CVT",
+        "evjarat" : "2022",
+        "ar" : 50000,
+        "kep" : "/kepek/toyota.png"
     }
 ]
