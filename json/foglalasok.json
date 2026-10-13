@@ -1,14 +1,242 @@
 [
     {
         "id": 0,
-        "auto_id" : 0,
-        "kezdo_datum" : "2026-06-07",
-        "idotartam" : 3,
-        "ar" : 50000,
-        "ugyfel" : {
-            "nev" : "Kis János",
-            "email" : "user@email.com",
-            "telefonszam" : "309530350"
+        "auto_id": 6,
+        "kezdo_datum": "2026-07-02",
+        "idotartam": 1,
+        "ar": 50000,
+        "ugyfel": {
+            "nev": "Kis János",
+            "email": "janos.kis@email.com",
+            "telefonszam": "705614226"
+        }
+    },
+    {
+        "id": 1,
+        "auto_id": 5,
+        "kezdo_datum": "2026-07-04",
+        "idotartam": 5,
+        "ar": 350000,
+        "ugyfel": {
+            "nev": "Kovács Gábor",
+            "email": "gabor.kovacs@email.com",
+            "telefonszam": "704335942"
+        }
+    },
+    {
+        "id": 2,
+        "auto_id": 4,
+        "kezdo_datum": "2026-08-13",
+        "idotartam": 3,
+        "ar": 165000,
+        "ugyfel": {
+            "nev": "Fekete Dóra",
+            "email": "dora.fekete@email.com",
+            "telefonszam": "206279418"
+        }
+    },
+    {
+        "id": 3,
+        "auto_id": 6,
+        "kezdo_datum": "2026-09-04",
+        "idotartam": 6,
+        "ar": 300000,
+        "ugyfel": {
+            "nev": "Szabó Péter",
+            "email": "peter.szabo@email.com",
+            "telefonszam": "708078673"
+        }
+    },
+    {
+        "id": 4,
+        "auto_id": 1,
+        "kezdo_datum": "2026-09-10",
+        "idotartam": 1,
+        "ar": 45000,
+        "ugyfel": {
+            "nev": "Tóth Anna",
+            "email": "anna.toth@email.com",
+            "telefonszam": "204903402"
+        }
+    },
+    {
+        "id": 5,
+        "auto_id": 2,
+        "kezdo_datum": "2026-10-27",
+        "idotartam": 2,
+        "ar": 94000,
+        "ugyfel": {
+            "nev": "Nagy Eszter",
+            "email": "eszter.nagy@email.com",
+            "telefonszam": "702719583"
+        }
+    },
+    {
+        "id": 6,
+        "auto_id": 1,
+        "kezdo_datum": "2026-11-17",
+        "idotartam": 2,
+        "ar": 90000,
+        "ugyfel": {
+            "nev": "Oláh Levente",
+            "email": "levente.olah@email.com",
+            "telefonszam": "708082668"
+        }
+    },
+    {
+        "id": 7,
+        "auto_id": 1,
+        "kezdo_datum": "2027-01-26",
+        "idotartam": 6,
+        "ar": 270000,
+        "ugyfel": {
+            "nev": "Takács Nóra",
+            "email": "nora.takacs@email.com",
+            "telefonszam": "302338687"
+        }
+    },
+    {
+        "id": 8,
+        "auto_id": 5,
+        "kezdo_datum": "2027-02-12",
+        "idotartam": 6,
+        "ar": 420000,
+        "ugyfel": {
+            "nev": "Simon Balázs",
+            "email": "balazs.simon@email.com",
+            "telefonszam": "208755439"
+        }
+    },
+    {
+        "id": 9,
+        "auto_id": 2,
+        "kezdo_datum": "2027-03-03",
+        "idotartam": 2,
+        "ar": 94000,
+        "ugyfel": {
+            "nev": "Szalai Orsolya",
+            "email": "orsolya.szalai@email.com",
+            "telefonszam": "708187926"
+        }
+    },
+    {
+        "id": 10,
+        "auto_id": 3,
+        "kezdo_datum": "2027-03-07",
+        "idotartam": 2,
+        "ar": 86000,
+        "ugyfel": {
+            "nev": "Mészáros Lilla",
+            "email": "lilla.meszaros@email.com",
+            "telefonszam": "702197935"
+        }
+    },
+    {
+        "id": 11,
+        "auto_id": 6,
+        "kezdo_datum": "2027-03-07",
+        "idotartam": 5,
+        "ar": 250000,
+        "ugyfel": {
+            "nev": "Király Bianka",
+            "email": "bianka.kiraly@email.com",
+            "telefonszam": "706707197"
+        }
+    },
+    {
+        "id": 12,
+        "auto_id": 4,
+        "kezdo_datum": "2027-04-03",
+        "idotartam": 1,
+        "ar": 55000,
+        "ugyfel": {
+            "nev": "Papp Máté",
+            "email": "mate.papp@email.com",
+            "telefonszam": "707067228"
+        }
+    },
+    {
+        "id": 13,
+        "auto_id": 2,
+        "kezdo_datum": "2027-05-17",
+        "idotartam": 2,
+        "ar": 94000,
+        "ugyfel": {
+            "nev": "Molnár Zsófia",
+            "email": "zsofia.molnar@email.com",
+            "telefonszam": "202556017"
+        }
+    },
+    {
+        "id": 14,
+        "auto_id": 4,
+        "kezdo_datum": "2027-06-09",
+        "idotartam": 1,
+        "ar": 55000,
+        "ugyfel": {
+            "nev": "Farkas Dániel",
+            "email": "daniel.farkas@email.com",
+            "telefonszam": "305437923"
+        }
+    },
+    {
+        "id": 15,
+        "auto_id": 3,
+        "kezdo_datum": "2027-06-15",
+        "idotartam": 4,
+        "ar": 172000,
+        "ugyfel": {
+            "nev": "Juhász Ádám",
+            "email": "adam.juhasz@email.com",
+            "telefonszam": "207210606"
+        }
+    },
+    {
+        "id": 16,
+        "auto_id": 6,
+        "kezdo_datum": "2027-08-10",
+        "idotartam": 6,
+        "ar": 300000,
+        "ugyfel": {
+            "nev": "Horváth Réka",
+            "email": "reka.horvath@email.com",
+            "telefonszam": "208536477"
+        }
+    },
+    {
+        "id": 17,
+        "auto_id": 2,
+        "kezdo_datum": "2027-08-13",
+        "idotartam": 6,
+        "ar": 282000,
+        "ugyfel": {
+            "nev": "Varga Bence",
+            "email": "bence.varga@email.com",
+            "telefonszam": "305661907"
+        }
+    },
+    {
+        "id": 18,
+        "auto_id": 4,
+        "kezdo_datum": "2027-09-19",
+        "idotartam": 6,
+        "ar": 330000,
+        "ugyfel": {
+            "nev": "Lakatos Tamás",
+            "email": "tamas.lakatos@email.com",
+            "telefonszam": "205443951"
+        }
+    },
+    {
+        "id": 19,
+        "auto_id": 1,
+        "kezdo_datum": "2027-09-20",
+        "idotartam": 6,
+        "ar": 270000,
+        "ugyfel": {
+            "nev": "Balogh Katalin",
+            "email": "katalin.balogh@email.com",
+            "telefonszam": "703094235"
         }
     }
 ]
