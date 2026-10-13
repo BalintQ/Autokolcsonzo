@@ -4,8 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Új foglalás | Autókülcsönző</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+    *{
+    box-sizing:border-box
+}
+.form-page {
+    background: #f4f6f9;
+}
+
+.form-wrapper,
+.results-wrapper {
+    padding: 70px 0 100px;
+    min-height: calc(100vh - 130px);
+}
+
+.form-header {
+    margin-bottom: 35px
+}
+
+.form-header h1 {
+    font-size: 57px;
+    font-weight: 800;
+    letter-spacing: -.05em
+}
+
+
+.form-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 15px 50px rgba(20, 30, 50, .08)
+}
+
+.form-label {
+    font-weight: 700
+}
+
+.form-control,
+.form-select {
+    padding: 12px 14px;
+    border-radius: 10px
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #e83b3b;
+
+}
+
+.btn-primary {
+    background: #e83b3b;
+    border-color: #e83b3b;
+    font-weight: 700
+}
+
+.btn-primary:hover {
+    background: #c92d2d;
+    border-color: #c92d2d;
+    transform: translateY(-2px)
+}
+
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family:Montserrat, Arial, Helvetica, sans-serif;
+    color: #182235;
+    margin: 0;
+    background: #fff
+}
+a{
+    font-size: larger;
+    color: #a4cbff;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background: rgba(11, 18, 32, .97);
+    padding: 14px 0
+}
+
+.navbar-brand {
+    font-size: 1.45rem;
+    letter-spacing: -.04em
+}
+
+.navbar-brand span {
+    color: #e83b3b
+}
+
+.nav-link {
+    color: #dce3ef
+}
+
+.nav-link:hover {
+    color: #fff
+}
+
+.rejtett {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .form-card {
+        max-width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .form-header h1 {
+        font-size: 36px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-wrapper,
+    .results-wrapper {
+        padding: 40px 0 60px;
+    }
+}
+</style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <div>
+        <a class="btn btn-outline-light" href="index.html"> <-- Vissza a főoldalra</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="form-wrapper">
+    <div class="container">
+      <div class="form-header text-center">
+        <h1 align="center">Autókölcsönzés mesterfokon!</h1>
+      </div>
+      <div class="form-card">
+        <form action="eredmenyek.html" method="get">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Név</label>
+              <input id="name" name="name" type="text" class="form-control" minlength="3" maxlength="60" required>
+              <div class="invalid-feedback">A név legalább 3 karakter legyen.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail cím</label>
+              <input id="email" name="email" type="email" class="form-control" required placeholder="pelda@email.hu">
+              <div class="invalid-feedback">Adj meg egy érvényes e-mail címet.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Telefonszám</label>
+              <input id="phone" name="phone" type="tel" class="form-control" required placeholder="+36 30 123 4567">
+              <div class="invalid-feedback">Adj meg érvényes telefonszámot.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="date" class="form-label">Tervezett kölcsönzés dátuma</label>
+              <input id="date" name="date" type="date" class="form-control" required>
+              <div class="invalid-feedback">Adj meg egy jövőbeli dátumot.
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input id="privacy" name="privacy" type="checkbox" class="form-check-input" required>
+                <label for="privacy" class="form-check-label">Elfogadom az adatkezelési feltételeket. *</label>
+                <div class="invalid-feedback">A feltétel elfogadása szükséges.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap gap-3">
+              <input type="button" value="Kölcsönzés elküldése"></input>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
     
 </body>
 </html>
