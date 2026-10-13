@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "auto_id" : 0,
+        "kezdo_datum" : "2026-06-07",
+        "idotartam" : 3,
+        "ar" : 50000,
+        "ugyfel" : {
+            "nev" : "Kis János",
+            "email" : "user@email.com",
+            "telefonszam" : "309530350"
+        }
+    }
+]
