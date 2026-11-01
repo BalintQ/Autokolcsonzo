@@ -10,16 +10,16 @@ const cards = () => {
     ki.classList.add("grid")
     card_v.classList.add("active")
     list_v.classList.remove("active")
-    
+
     ki.innerHTML = ""
 
     data_a.forEach(element => {
         ki.innerHTML += `
             <div class="card">
-                <img src="${element.kep}" alt="Avatar" style="width:100%">
+                <img src="${element.kep}" alt="Autó" style="width:100%">
                 <div class="container">
-                    <h4><b>${element.gyarto} ${element.modell}</b></h4> 
-                    <p>${element.ar} Ft/hó</p> 
+                    <h4><b>${element.gyarto} ${element.modell}</b></h4>
+                    <p>${element.ar} Ft/hó</p>
                 </div>
             </div>`
     });
@@ -31,15 +31,17 @@ const list = () => {
     card_v.classList.remove("active")
     list_v.classList.add("active")
 
-    ki.innerHTML = ""  
-    
+    ki.innerHTML = ""
+
     var temp = document.createElement("table")
 
     temp.innerHTML += `<tr> <th>Autó</th> <th>Kezdő dátum</th> <th>Időtartam (hónap)</th> <th>Teljes ár</th> <th>Ügyfél neve</th> <th>Ügyfél telefonszáma</th> </tr>`
-    
-    data_f.forEach(element => {
-        temp.innerHTML += `<tr> <td>${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}</td> <td>${element.kezdo_datum}</td> <td>${element.idotartam}</td> <td>${element.ar}</td> <td>${element.ugyfel.nev}</td> <td>${element.ugyfel.telefonszam}</td> <td><button value=${element.id} class="torles" >Törlés</button></td></tr>`
-    });
+
+  data_f.forEach(element => {
+    if (localStorage.getItem(element.id) != "true") {
+      temp.innerHTML += `<tr> <td>${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}</td> <td>${element.kezdo_datum}</td> <td>${element.idotartam}</td> <td>${element.ar} Ft</td> <td>${element.ugyfel.nev}</td> <td>${element.ugyfel.telefonszam}</td> <td><button value=${element.id} class="torles" >Törlés</button></td></tr>`
+    }
+  });
 
     ki.appendChild(temp)
 
@@ -53,8 +55,29 @@ const list = () => {
 }
 
 const del = (val) => {
-    localStorage.setItem(val,"true")
+  localStorage.setItem(val, "true")
+  list()
 }
 
 card_v.addEventListener("click",cards)
 list_v.addEventListener("click",list)
+window.addEventListener("load", cards)
+
+
+
+var teto = document.getElementById("teto")
+
+const scroll20 = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    teto.style.display = "block";
+  } else {
+    teto.style.display = "none";
+  }
+}
+
+window.addEventListener("scroll", scroll20)
+
+teto.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})
