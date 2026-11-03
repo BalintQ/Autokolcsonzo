@@ -2,29 +2,29 @@ Projektmunka specifikáció
 
 _Főoldal:_
 
-    \- Navbar, benne bal felső sarokban 2 gomb, egyik átviszi a felhasználót az autók listájához, a másik foglalást indít
+    - Navbar, benne bal felső sarokban 2 gomb, egyik átviszi a felhasználót az autók listájához, a másik foglalást indít
 
-    \-Bemutatkozás + útmutató a kölcsönzéshez
+    -Bemutatkozás + útmutató a kölcsönzéshez
 
-    \-„ide” szó átvisz a foglalás oldalára
+    -„ide” szó átvisz a foglalás oldalára
 
 _Foglalás oldal:_
 
-    \-Bal felső sarokban gomb ami vissza viszi a felhasználót a főoldalra
+    -Bal felső sarokban gomb ami vissza viszi a felhasználót a főoldalra
 
-    \-Név, email cím, telefonszám és dátum kitöltendő mező, ha bármelyik üresen marad hibát jelez
+    -Név, email cím, telefonszám és dátum kitöltendő mező, ha bármelyik üresen marad hibát jelez
 
-    \-Legördülő menü az elérhető autómodellekkel mely ha üresen marad hibát jelez
+    -Legördülő menü az elérhető autómodellekkel mely ha üresen marad hibát jelez
 
-    \-Jelölőnégyzet, amely elfogadása kötelező, hiányában nem küldi el a foglalást
+    -Jelölőnégyzet, amely elfogadása kötelező, hiányában nem küldi el a foglalást
 
-    \-Gomb, kölcsönzés elküldése
+    -Gomb, kölcsönzés elküldése
 
 _Foglalások (lista.html):_
 
-    \- felső navbar, benne bal felső sarokban 2 gomb, egyik vissza viszi a felhasználót a főoldalra, a másik foglalást indít
+    - felső navbar, benne bal felső sarokban 2 gomb, egyik vissza viszi a felhasználót a főoldalra, a másik foglalást indít
 
-    \-Felső alatti navbar, abban jobb felső sarok 2 gomb amely a foglalásokat mutatja , első gomb lista nézetben, második gomb ikonos nézetben
+    -Felső alatti navbar, abban jobb felső sarok 2 gomb amely a foglalásokat mutatja , első gomb lista nézetben, második gomb ikonos nézetben
 
 Feladatok elvégzése:
 
