@@ -67,7 +67,6 @@ a{
   top: 10px;
   overflow: hidden;
   background-color: lightgray;
-
   margin-bottom: 20px;
 }
 
@@ -93,4 +92,8 @@ table td{
 
 #teto:hover {
   background-color: #555;
+}
+
+footer{
+  margin-top: 50px;
 }

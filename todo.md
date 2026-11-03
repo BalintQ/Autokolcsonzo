@@ -2,6 +2,6 @@
 
 ### TODO
 
-- [ ] Navigácó oldalak között
-- [ ] Bálint: Jelenlegi foglalások generálása
-- [ ] Bálint: Jelenlegi foglalások megjelenitése
+- [x] Navigácó oldalak között
+- [x] Bálint: Jelenlegi foglalások generálása
+- [x] Bálint: Jelenlegi foglalások megjelenitése

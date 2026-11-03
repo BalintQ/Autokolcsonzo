@@ -5,6 +5,7 @@ const ki = document.getElementById("ki")
 const card_v = document.getElementById("card_v")
 const list_v = document.getElementById("list_v")
 
+
 const cards = () => {
     ki.classList.remove("lista")
     ki.classList.add("grid")
@@ -13,16 +14,22 @@ const cards = () => {
 
     ki.innerHTML = ""
 
-    data_a.forEach(element => {
+    data_f.forEach(element => {
+      if (localStorage.getItem(element.id) != "true") {
+        const datum_k = new Date(element.kezdo_datum)
+        const datum_v = new Date(element.kezdo_datum)
+        datum_v.setMonth(datum_v.getMonth() + element.idotartam)
         ki.innerHTML += `
             <div class="card">
-                <img src="${element.kep}" alt="Autó" style="width:100%">
+                <img src="${data_a[element.auto_id-1].kep}" alt="${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}" style="width:100%">
                 <div class="container">
-                    <h4><b>${element.gyarto} ${element.modell}</b></h4>
-                    <p>${element.ar} Ft/hó</p>
+                    <h4><b>${element.ugyfel.nev}</b></h4>
+                    <p>${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}</p>
+                    <p>${datum_k.toLocaleDateString()} - ${datum_v.toLocaleDateString()}</p>
+                    <p>${element.ar} Ft</p>
                 </div>
             </div>`
-    });
+}});
 }
 
 const list = () => {
@@ -80,4 +87,13 @@ window.addEventListener("scroll", scroll20)
 teto.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+})
+
+document.getElementById("reset").addEventListener("click", () => {
+  localStorage.clear()
+  if (ki.classList.contains("grid")) {
+    cards()
+  }else{
+    list()
+  }
 })
