@@ -2,8 +2,32 @@ import data_a from "../json/autok.json" with {type:'json'};
 import data_f from "../json/foglalasok.json" with {type:'json'};
 
 const ki = document.getElementById("ki")
+const rendez = document.getElementById("rendez")
 const card_v = document.getElementById("card_v")
 const list_v = document.getElementById("list_v")
+
+
+const szures = () => {
+
+  var ujdata = data_f.sort((a,b) => {
+      switch (rendez.value) {
+        case "ar_nov":
+          return a.ar - b.ar
+        case "ar_csok":
+          return b.ar - a.ar
+      
+        case "az":
+          return a.ugyfel.nev - b.ugyfel.nev
+        case "za":
+          return b.ugyfel.nev - a.ugyfel.nev
+        default:
+          break;
+      }
+  })
+}
+
+
+rendez.addEventListener("change",szures)
 
 
 const cards = () => {
@@ -27,9 +51,16 @@ const cards = () => {
                     <p>${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}</p>
                     <p>${datum_k.toLocaleDateString()} - ${datum_v.toLocaleDateString()}</p>
                     <p>${element.ar} Ft</p>
+                    <button value=${element.id} class="torles" >Törlés</button>
                 </div>
             </div>`
 }});
+
+    for (const element of document.getElementsByClassName("torles")) {
+        element.addEventListener("click", () =>
+            del(element.value)
+        )
+    }
 }
 
 const list = () => {
@@ -63,7 +94,11 @@ const list = () => {
 
 const del = (val) => {
   localStorage.setItem(val, "true")
-  list()
+  if (ki.classList.contains("grid")) {
+    cards()
+  }else{
+    list()
+  }
 }
 
 card_v.addEventListener("click",cards)

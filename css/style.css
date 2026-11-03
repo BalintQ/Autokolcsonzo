@@ -97,3 +97,15 @@ table td{
 footer{
   margin-top: 50px;
 }
+
+#rendez{
+  font-size: large;
+  height: 3rem;
+}
+
+.midnav #rendez{
+  float: left;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
