@@ -6,6 +6,7 @@ const rendez = document.getElementById("rendez")
 const card_v = document.getElementById("card_v")
 const list_v = document.getElementById("list_v")
 
+var rendezett;
 
 const szures = () => {
 
@@ -17,17 +18,25 @@ const szures = () => {
           return b.ar - a.ar
       
         case "az":
-          return a.ugyfel.nev - b.ugyfel.nev
+          return a.ugyfel.nev.localeCompare(b.ugyfel.nev)
         case "za":
-          return b.ugyfel.nev - a.ugyfel.nev
+          return b.ugyfel.nev.localeCompare(a.ugyfel.nev)
         default:
-          break;
+          return a.id - b.id
       }
   })
+
+  rendezett = ujdata
+
+  if (ki.classList.contains("grid")) {
+    cards(ujdata)
+  }else{
+    list(ujdata)
+  }
 }
 
 
-rendez.addEventListener("change",szures)
+rendez.addEventListener("change",szures)  
 
 
 const cards = () => {
@@ -38,7 +47,7 @@ const cards = () => {
 
     ki.innerHTML = ""
 
-    data_f.forEach(element => {
+    rendezett.forEach(element => {
       if (localStorage.getItem(element.id) != "true") {
         const datum_k = new Date(element.kezdo_datum)
         const datum_v = new Date(element.kezdo_datum)
@@ -75,7 +84,7 @@ const list = () => {
 
     temp.innerHTML += `<tr> <th>Autó</th> <th>Kezdő dátum</th> <th>Időtartam (hónap)</th> <th>Teljes ár</th> <th>Ügyfél neve</th> <th>Ügyfél telefonszáma</th> </tr>`
 
-  data_f.forEach(element => {
+  rendezett.forEach(element => {
     if (localStorage.getItem(element.id) != "true") {
       temp.innerHTML += `<tr> <td>${data_a[element.auto_id-1].gyarto} ${data_a[element.auto_id-1].modell}</td> <td>${element.kezdo_datum}</td> <td>${element.idotartam}</td> <td>${element.ar} Ft</td> <td>${element.ugyfel.nev}</td> <td>${element.ugyfel.telefonszam}</td> <td><button value=${element.id} class="torles" >Törlés</button></td></tr>`
     }
@@ -103,7 +112,8 @@ const del = (val) => {
 
 card_v.addEventListener("click",cards)
 list_v.addEventListener("click",list)
-window.addEventListener("load", cards)
+
+window.addEventListener("load", szures)
 
 
 
